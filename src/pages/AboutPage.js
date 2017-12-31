@@ -20,7 +20,7 @@ class AboutPage extends React.Component {
         />
         <MarginBottomM text>
           <Header medium>
-            Hi there, I’m Andrea
+            Hi there, I’m Andrea!
           </Header>
           <Paragraph>
             I’m a Product Designer in SF who has worked
