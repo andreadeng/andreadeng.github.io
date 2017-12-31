@@ -10,9 +10,14 @@ import textColor from '../atoms/textColor';
 
 const Header = styled.h1`
   font-family: ${fontFamily.header};
-  font-weight: ${fontWeight.bold};
-  color: ${props => props.branded ? `${textColor.brand}` : `${textColor.primary}`};
+  font-weight: ${props => props.regular ? `${fontWeight.regular}` : `${fontWeight.bold}`};
+  text-transform: ${props => props.uppercase ? 'uppercase' : 'none'};
   line-height: ${lineHeight.default};
+  color: ${props => 
+    (props.branded && `${textColor.brand}`)
+      || (props.primary && `${textColor.primary}`)
+      || (props.secondary && `${textColor.secondary}`)
+  };
   margin-top: ${props =>
     (props.link && `${spacing.xs}`)
       || (`${spacing.none}`)};

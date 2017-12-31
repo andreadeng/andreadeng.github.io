@@ -1,6 +1,6 @@
 const lineHeight = {
-  default: '1.5',
-  spaced: '1.8',
+  default: '1.4',
+  spaced: '1.64',
 }
 
 export default lineHeight;

@@ -1,6 +1,6 @@
 const textColor = {
-  primary: '#212121',
-  secondary: '#757575',
+  primary: '#263238',
+  secondary: '#607D8B',
   tertiary: '#757575',
   brand: '#536DFE',
   brandDarker: '#304FFE',

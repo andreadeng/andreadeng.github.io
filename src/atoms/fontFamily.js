@@ -1,5 +1,5 @@
 const fontFamily = {
-  body: 'Merriweather',
+  body: 'Lato',
   header: 'Lato',
 }
 

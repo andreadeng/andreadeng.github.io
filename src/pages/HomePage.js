@@ -18,7 +18,7 @@ class HomePage extends React.Component {
       <div>
         <MarginBottomM text>
           <Grid>
-            <Grid.Column width={14}>
+            <Grid.Column computer={14} mobile={16}>
               <Paragraph>
                 I’m a Product Designer in San Francisco 
                 and have previously worked at&nbsp;
@@ -51,7 +51,7 @@ class HomePage extends React.Component {
                 </Link>
               </Paragraph>
             </Grid.Column>
-            <Grid.Column width={2}>
+            <Grid.Column only='computer' width={2}>
             </Grid.Column>
           </Grid>
         </MarginBottomM>
