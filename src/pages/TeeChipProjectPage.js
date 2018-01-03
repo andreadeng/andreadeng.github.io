@@ -229,13 +229,13 @@ class TeeChipProjectPage extends React.Component {
             <Grid.Column only='tablet computer' width={1}>
             </Grid.Column>
             <Grid.Column mobile={16} tablet={12} computer={14}>
-              <iframe
-                allow="encrypted-media"
-                allowFullScreen
-                frameBorder="0"
-                gesture="media"
-                height="550px"
-                src="https://www.youtube.com/embed/OCKvwjLXpWY?rel=0&amp;showinfo=0"
+              <iframe 
+                allow="encrypted-media" 
+                allowfullscreen
+                frameborder="0" 
+                gesture="media" 
+                height="550px" 
+                src="https://www.youtube.com/embed/OCKvwjLXpWY?rel=0&amp;showinfo=0" 
                 title="TeeChip analytics video"
                 width="100%">
               </iframe>

@@ -24,7 +24,7 @@ const Header = styled.h1`
   };
 
   margin-bottom: ${props => 
-    (props.small && `${spacing.xs}`)
+    (props.small && '0.5rem')
       || (props.xsmall && `${spacing.xs}`)
       || (props.medium && `${spacing.s}`)
       || (props.large && `${spacing.none}`)

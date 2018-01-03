@@ -1,14 +1,15 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
+import { List } from 'semantic-ui-react'
 
 import MarginBottomM from '../components/MarginBottomM';
 import TextSection from '../components/TextSection'; 
 import TextSectionSub from '../components/TextSectionSub'; 
-import NumList from '../components/NumList'; 
 import ImageSection from '../components/ImageSection';
 import PairImageSection from '../components/PairImageSection';
 import QuadImageSection from '../components/QuadImageSection'; 
 import FullImageSection from '../components/FullImageSection';
+import FluidImageSection from '../components/FluidImageSection';
 import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Caption from '../components/Caption';
@@ -22,169 +23,173 @@ class OrdersProjectPage extends React.Component {
       <div className="OrdersProjectPage">
         <MarginBottomM text>
           <Header large>
-            Reducing order delays
+            Issue Resolution system
           </Header>
           <Caption>
-            Lead Product Designer &middot; UX / UI &middot; 2017
+            Lead Product Designer &middot; UX / UI &middot; June - July 2017
           </Caption>
         </MarginBottomM>
-
-        <FullImageSection
-          src="https://cdn-images-1.medium.com/max/2000/1*aSmelP-NN3O_i4uaQ2mBbA.png"
-          caption="New order on hold workflow (2017)"
-        />
-
         <MarginBottomM text>
-          <Header small secondary>
-            The Brief
-          </Header>
           <Paragraph>
-            Scalable Press is a technology-driven print and fulfillment company. 
-            Their online platform provides businesses with an efficient 
-            way to place and manage custom printing orders.
+            Scalable Press is a print and fulfillment startup. 
+            Their online platform enables businesses to easily place 
+            and manage custom printing orders. 
+            I led the design of the Issue Resolution system to 
+            enable users to resolve order issues before they caused delays.
           </Paragraph>
           <Paragraph>
-            During fulfillment, an order can have a variety of problems. 
-            It may contain low resolution artwork, incorrect print colors, 
-            licensed material, and so on. However, users are unaware of 
-            these issues until the order is delayed. By then, not only 
-            is it too late to fix the issue, there is no system in place 
-            to do so. We created the On Hold System to catch 
-            issues early and enable users to resolve them.
-          </Paragraph>
-          <Paragraph>
-            I led the end-to-end design and collaborated with 2 Engineers and a Product Manager. 
-            We had a tight timeline of 2 months to launch while 
-            simultaneously building the Design System the On Hold System would use.
+            <Header xsmall>
+              Role
+            </Header>
+            <ul>
+              <li>
+                I was sole designer and led the design process end-to-end. 
+              </li>
+              <li>
+                Team consisted of PM and 2 engineers. 
+              </li>
+            </ul>
+            <Header xsmall >
+              Constraints
+            </Header>
+            <ul>
+              <li>
+                2 month timeline.
+              </li>
+              <li>
+                Simulaneously built the Design System.
+              </li>
+            </ul>
           </Paragraph>
         </MarginBottomM>
     
+
+        <FullImageSection
+          src="https://cdn-images-1.medium.com/max/2000/1*aSmelP-NN3O_i4uaQ2mBbA.png"
+          caption="New Issue Resolution workflow (2017)"
+        />
+
+        <MarginBottomM text>
+          <Header small>
+            Problem
+          </Header>
+          <Header medium branded>
+            How do we communicate what is wrong with an order and how to fix it?
+          </Header>
+          <Paragraph>
+            Since over&nbsp;
+            <Span primary strong>
+              40% of customer inquiries is about order status
+            </Span>
+            , I originally thought the problem was insufficient order status information. 
+            After interviewing 20 users, I learned:
+          </Paragraph>
+          <Paragraph>
+            <ul>
+              <li>
+                Users called about order status because they were worried about a delayed order.
+              </li>
+              <li>
+                Users want to know the reason for the delay to provide an explanation to their client 
+                and to prevent such delays in the future.
+              </li>
+              <li>
+                Users want more options to expedite a delayed order 
+                such as changing the shipping address or method.
+              </li>
+            </ul>
+          </Paragraph>
+
+          <Paragraph>
+            For customers, preventing order delays was more important than being informed about them. 
+            From a data query of order delays, I also learned that&nbsp;
+            <Span primary strong>
+              80% of delay reasons can be caught early
+            </Span>
+            .
+          </Paragraph>
+        </MarginBottomM> 
+        
+        <PairImageSection
+          src_left="https://cdn-images-1.medium.com/max/1600/1*S0FOsYZF9yYHttOt14K3EA.png"
+          caption_left="Customer inquiry breakdown from April 2017 report"
+          src_right="https://cdn-images-1.medium.com/max/1600/1*dBm5nwY6VF0UQ72LL59LGA.png"
+          caption_right="
+            Delay reasons from data query
+          "
+        />
+
         <ImageSection
           src="https://cdn-images-1.medium.com/max/1600/1*IL66pt7fhcHuoR0JIh0v2g.jpeg"
           caption="Team visit to Indiana facility to understand the fulfillment process"
         />
-      
+
         <MarginBottomM text>
-          <Header small secondary>
-            Initial problem
+          <Header small>
+            Hypothesis
           </Header>
           <Header medium branded>
-            "Where is my order?!?!"
+            An Issue Resolution system that is informative and flexible.
           </Header>
           <Paragraph>
-            After reviewing a breakdown of customer inquiries, 
-            I learned that the number one reason customers call sales is to ask where their 
-            order is.
+            I recruited the engineers, PM, and VP of 
+            Sales to organize user research insights and 
+            brainstorm solutions. After brainstorming, I identified 
+            the following opportunity: “How might we incorporate an 
+            Issue Resolution system during the fulfillment process?” 
           </Paragraph>
         </MarginBottomM>
-          
-
-        <ImageSection
-          src="https://cdn-images-1.medium.com/max/1600/1*8XnaAc6_6g3ZvZJji49eyQ.png"
-          caption="Breakdown of customer inquiries from April 2017"
-        />
-
-        <MarginBottomM text>
-          <Paragraph>
-            I then interviewed 12 Scalable Press sales reps and learned 
-            that the online platform does have an Events Feed for each order. However, 
-            users do not use the feature because it is not accurate or detailed enough.
-
-            Thus, my initial hypothesis was:&nbsp;
-            <Span primary italic strong>
-              “If we made the Events Feed feature more granular, 
-              users would use it to inform their customers.”&nbsp; 
-            </Span>
-          </Paragraph>
-        </MarginBottomM>
-
-        <ImageSection
-          src="https://cdn-images-1.medium.com/max/1600/1*ytoBHO252eoWfeKKTWrHvA.png"
-          caption="Current Events Feed feature is inadequate"
-        />
-
-        <MarginBottomM text>
-          <Header secondary small>
-            User research
-          </Header>
-          <Header medium branded>
-            Order delays is the real problem
-          </Header>
-          <Paragraph>
-            Through interviewing 20 existing users, I realized:
-          </Paragraph>
-          <NumList 
-            content_1="Users don't use Events Feed because they have hundreds of
-            orders being fulfilled at a time and can't check them all."
-            content_2="Our sales team sends regular reports to larger clients about 
-            their common order issues so they can prevent them in the future."
-            content_3="Users contact sales reps about delayed orders to expedite them."
-          />
-          <Paragraph>
-            From a data query of order delays, I also learned that 80% of order issues could 
-            be caught and resolved early. For customers, preventing order delays 
-            was more important than being informed about them. 
-          </Paragraph>
-        </MarginBottomM>
-
-        <ImageSection 
-          src="https://cdn-images-1.medium.com/max/1600/1*lP1trKv700GQyBML0M5SRg.png"
-          caption="
-            Order delay reasons from data query. All reasons can be caught and resolved 
-            early, except for Production error.
-          "
-        /> 
-
-        <MarginBottomM text>
-          <Header small secondary>
-            New hypothesis
-          </Header>
-          <Header medium branded>
-            Building an issue resolution flow
-          </Header>
-          <Paragraph>
-            With that in mind, I recruited the engineers and VP of Sales 
-            to brainstorm together. After brainstorming, I identified the following opportunity:&nbsp;
-            <Span primary italic strong>
-              “How might we incorporate an issue resolution flow during the fulfillment process?”
-            </Span>
-          </Paragraph>
-        </MarginBottomM> 
 
         <PairImageSection 
           src_left="https://cdn-images-1.medium.com/max/1600/1*J2NKYsrN_4mxMbCEymCanA.jpeg"
           caption_left="Affinity map of user research"
           src_right="https://cdn-images-1.medium.com/max/2000/1*Obi0br-pktuxFOdzoreccQ.jpeg"
-          caption_right="Categorizing our brainstorm"
-        />        
-
+          caption_right="Team brainstorm"
+        />   
+        
         <MarginBottomM text>
-          <Header small secondary>
+          <Header small>
             Process
-          </Header>
-          <Header medium branded>
-            Feedback early and often
           </Header>
         </MarginBottomM>
 
         <MarginBottomM text>
-          <Header xsmall secondary>
-            01. Initial exploration
+          <Header xsmall>
+            01. Market research
           </Header>
           <Paragraph>
-            I first set out to identify whether the issue resolution flow should exist  
-            at the Orders list level. I created a paper prototype to test my approach.
+            Before diving into the problem, I surveyed other
+            products and put together an audit of notifications. Here’s a few of them.
           </Paragraph>
+        </MarginBottomM>
+        <FluidImageSection 
+          src="https://cdn-images-1.medium.com/max/2000/1*In03ZrrwnRbWJ5ppTIhnyg.png"
+          caption=""
+        />
+
+        <MarginBottomM text>
+          <Header xsmall>
+            02. Initial exploration
+          </Header>
           <Paragraph>
-            After usability testing with a few sales reps, 
-            I learned that issue resolution on the Orders page was intrusive. 
-            It obscurred the list of orders, especially when there were a lot of issues.
-            Resolving issues and viewing orders requires different 
-            intentions but were inappropriately fused in the same view. 
-            Separated from the order it referenced, each issue message did not 
-            provide enough context for users to take action. As a result, I 
-            decided to I explored ways to present 
-            issue resolution in its order context.
+            I first set out to identify whether to incorporate Issue Resolution at the orders level.
+            I tested a paper prototype of this approach with sales and learned:
+            <ul>
+              <li>
+                Issue resolution at the orders level was intrusive 
+                as it obscurred the list of orders, especially when there were a lot of issues.
+              </li>
+              <li>
+                Resolving issues and viewing orders requires different 
+                intentions but were inappropriately fused in the same view. 
+              </li>
+              <li>
+                Separated from the order it referenced, each issue message did not 
+                provide enough context for users to take action.
+              </li>
+            </ul>
+              As a result, I decided to I explored ways to present 
+              issue resolution in its order context.
           </Paragraph>
         </MarginBottomM>
       
@@ -194,44 +199,38 @@ class OrdersProjectPage extends React.Component {
         />
 
         <MarginBottomM text>
-          <Header xsmall secondary>
-            02. Explorations in Order level
+          <Header xsmall>
+            03. Medium-fidelity explorations
           </Header>
+          <Paragraph>
+            I explored many different ways of incorporating Issue Resolution 
+            into Order Details. Here are a few.
+          </Paragraph>
         </MarginBottomM>
 
         <QuadImageSection
           src_1="https://cdn-images-1.medium.com/max/1200/1*fR3su7IUNuvfMEVWPhHq1g.png"
           caption_1="Issue resolution as separate section "
-          subcaption_1="(Heavy since large emphasis on issues)"
 
           src_2="https://cdn-images-1.medium.com/max/1200/1*NwFV3C5lCFnI9vaIg2kjzg.png"
           caption_2="Issue resolution as collapsible section "
-          subcaption_2="(More separation between order details and issue)"
 
           src_3="https://cdn-images-1.medium.com/max/1200/1*FvXc0Dlv1bJnFHi1ALbBsg.png"
           caption_3="Issue resolution within order details "
-          subcaption_3="(More integrated with page)"
 
           src_4="https://cdn-images-1.medium.com/max/1200/1*5T1T2gmsHihWCGTC1kB7NA.png"
           caption_4="Issue resolution as modal "
-          subcaption_4="(Light since separated from rest of page)"
         />
-        
 
         <MarginBottomM text>
           <Paragraph>
-            I first tested a prototype of (B) which presents order issues 
-            as separate part of the page with expandable sections of 
-            more information. However, after testing the prototype 
-            with 5 of our users, I learned that it was not prominent 
-            enough and felt disconnected from the affected products. 
-            After further critique from the other product designer and 
-            PM, I decided to test a prototype of (D) which proved to better 
-            communicate which issue affected which products, something I 
-            didn’t realize was important for users initially. However, it 
-            was not clear to users that “View details” will allow them to 
-            fix the issue. I looked into clearly communicating how users 
-            can fix orders in later iterations.
+            After testing a prototype of (B) with 5 users, 
+            I learned the section was overlooked and 
+            felt disconnected from the affected products. 
+            I then tested a prototype of (D) which 
+            clarified which products were affected. However, it 
+            was unclear that clicking “View details” enabled users to 
+            resolve the issue. I addressed this in later explorations.
           </Paragraph>
         </MarginBottomM>
 
@@ -241,43 +240,42 @@ class OrdersProjectPage extends React.Component {
             title="Medium fidelity prototype demo">
           </iframe>
           <Caption italic centered>
-            Medium fidelity prototype of (D) from above explorations
+            Prototype of (D) from above explorations
           </Caption>
         </MarginBottomM>
 
         <MarginBottomM text>
-          <Header xsmall secondary>
-            03. High fidelity explorations
+          <Header small>
+            Final solution
           </Header>
+          <Header medium branded>
+            Flexible and integrated system
+          </Header>
+          <Paragraph>
+            In the end, I decided on a flexible and integrated solution and used the new 
+            Design System to implement the visual design. Highlights of the final solution are:
+            <ul>
+              <li>
+                High level error message on Orders page.
+              </li>
+              <li>
+                "On Hold" and "Partially On Hold" labels to indicate orders with issues.
+              </li>
+              <li>
+                Issue Resolution in context of affected items.
+              </li>
+              <li>
+                Surfaced and clear action to resolve issue.
+              </li>
+              <li>
+                Modal with more details, including if issue affects other orders.
+              </li>
+              <li>
+                Modals to edit shipping address or method.
+              </li>
+            </ul>
+          </Paragraph>
         </MarginBottomM>
-
-
-        <MarginBottomM text>
-          <Header xsmall secondary>
-            04. Final solution
-          </Header>
-          <Paragraph>
-            For the On Hold System, I’ve added an “In review” 
-            step to the fulfillment process to catch issues early on. Orders that 
-            pass the review process will enter fulfillment and orders with issues will 
-            be marked "On Hold".
-          </Paragraph>
-          <Paragraph>
-            The final interaction includes a nonintrusive but clear 
-            indication of orders with issues with the use of "On Hold" 
-            and "Partially On Hold" status labels. The On Hold issue is also 
-            introduced in context of which part of the order is affected. 
-            This way, users can see at first glance, what the issue is 
-            and which products are affected. Additional new features 
-            such as the ability to edit the shipping address 
-            and method gives users a sense of flexibility and control when 
-            handling order issues.
-          </Paragraph>
-          <Paragraph>
-            The new On Hold System was also the first new feature to use the 
-            Scalable Press Design System.
-          </Paragraph>
-        </MarginBottomM> 
 
         <MarginBottomM>
           <Grid>
@@ -295,47 +293,66 @@ class OrdersProjectPage extends React.Component {
             </Grid.Column>
           </Grid>
           <Caption italic centered>
-            Final prototype of On Hold System on stage 
+            Final prototype of Issue Resolution system on stage 
           </Caption>
         </MarginBottomM>
 
         <MarginBottomM text>
-          <Header small secondary>
+          <Header small>
             Results
           </Header>
           <Paragraph>
-            After launching the On Hold System, order delays decreased 
-            by 30%. We also received several complimentary emails from customers  
-            and positive comments from sales.
+            After launching Issue Resolution system:
           </Paragraph>
-        </MarginBottomM> 
+          <Paragraph>
+            <ul>
+              <li>
+                Order delays decreased by 30%.
+              </li>
+              <li>
+                Received complimentary emails from customers
+              </li>
+              <li>
+                Received positive comments from sales
+              </li>
+            </ul>
+          </Paragraph>
+        </MarginBottomM>
 
         <MarginBottomM text>
-          <Header small secondary>
+          <Header small>
             Takeaways
           </Header>
+          <Header xsmall>
+            1. Ask questions before diving into design.
+          </Header>
           <Paragraph>
-            From this project, I learned how important it is to 
-            ask the right questions before diving into design. 
-            Instead of just improving the Events Feed feature, 
-            we provided greater value to users by reducing the 
-            number of delayed orders. Involving engineers, sales, 
+            Instead of just improving Order Status information, 
+            we provided greater value by reducing order delays. 
+          </Paragraph>
+
+          <Header xsmall>
+            2. Collaborate to understand all needs.
+          </Header>
+          <Paragraph>
+            Involving engineers, sales, 
             and PM early on was also crucial in understanding 
             technical constraints and business goals upfront and 
-            exploring a variety of solutions. I learned that stakeholders 
+            exploring a variety of solutions. I also learned that stakeholders 
             can be a great resource for user needs if I filter through 
-            biased perspectives. I also learned that hustling to get 
-            feedback early and often reduces time working in the wrong 
+            biased perspectives. 
+          </Paragraph>
+
+          <Header xsmall>
+            3. Get feedback early and often.
+          </Header>
+          <Paragraph>
+            Hustling to get feedback early and often reduced the time working in the wrong 
             direction. This is what enabled us to launch the system 
-            in 2 months time and see immense success. In the future, we will 
-            also be looking into other opportunities to create value 
-            for users that we didn’t have time to dive into for this 
-            project such as preventing orders issues at the time of 
-            placing the order and better illustrating improved turnaround 
-            times to users.
+            in 2 months time and see immense success. 
           </Paragraph>
         </MarginBottomM> 
-
+        
       </div>
     );
   }

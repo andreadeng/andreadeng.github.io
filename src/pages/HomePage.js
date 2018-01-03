@@ -56,17 +56,17 @@ class HomePage extends React.Component {
           </Grid>
         </MarginBottomM>
 
-        <MarginBottomS text>
-          <Header xsmall>
-            Select Works
+        <MarginBottomM text>
+          <Header medium>
+            Case studies
           </Header>
-        </MarginBottomS>
+        </MarginBottomM>
         <MarginBottomM text>
           <Link to="/orders-project-page">
             <Image src='https://cdn-images-1.medium.com/max/2000/1*aSmelP-NN3O_i4uaQ2mBbA.png' fluid />
-            <Header link>
+            <Header link small>
               <LinkHeader>
-                Reducing order delays
+                Issue Resolution system
               </LinkHeader>
             </Header>
             <Caption>
@@ -78,7 +78,7 @@ class HomePage extends React.Component {
         <MarginBottomM text>
           <Link to="/sp-project-page">
             <Image src='https://cdn-images-1.medium.com/max/2000/1*qJ1Wh8wo97axeJQ1x9WvzQ.png' fluid />
-            <Header link>
+            <Header link small>
               <LinkHeader>
                 Unifying Scalable Press web
               </LinkHeader>
@@ -92,7 +92,7 @@ class HomePage extends React.Component {
         <MarginBottomM text>
           <Link to="/teechip-project-page">
             <Image src='https://cdn-images-1.medium.com/max/2000/1*4AUIVpuqEZLZXDFlyt1X2Q.png' fluid />
-            <Header link>
+            <Header link small>
               <LinkHeader>
                 Renovating the ecommerce experience
               </LinkHeader>
@@ -106,7 +106,7 @@ class HomePage extends React.Component {
         <MarginBottomM text>
           <Link to="/yumi-project-page">
             <Image src='https://cdn-images-1.medium.com/max/1600/1*1FIQk3-YHKlvoxEG_MsI3g.jpeg' fluid />
-            <Header link>
+            <Header link small>
               <LinkHeader>
                 YUMI: Eat together
               </LinkHeader>
@@ -120,7 +120,7 @@ class HomePage extends React.Component {
         <MarginBottomM text>
           <Link to="/binder-project-page">
             <Image src='https://cdn-images-1.medium.com/max/2000/1*BAZsAWF2_TiNduMkoEjzcw.jpeg' fluid />
-            <Header link>
+            <Header link small>
               <LinkHeader>
                 Binder: Augmented note-taking app
               </LinkHeader>

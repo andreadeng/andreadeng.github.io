@@ -2,8 +2,8 @@ const textColor = {
   primary: '#263238',
   secondary: '#607D8B',
   tertiary: '#757575',
-  brand: '#536DFE',
-  brandDarker: '#304FFE',
+  brand: '#3D5AFE',
+  brandDarker: '#2141F0',
 }
 
 

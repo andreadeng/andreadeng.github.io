@@ -12,7 +12,7 @@ const Chrome = (props) => (
   <Page padded='very'>
     <MarginBottomS text>
       <Link to='/'>
-        <Header link>
+        <Header small link>
           <LinkHeader>Andrea Deng</LinkHeader>
         </Header>
       </Link>
